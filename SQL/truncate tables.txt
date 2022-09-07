@@ -1,0 +1,9 @@
+truncate table applications;
+truncate table areaco;
+truncate table areaco2;
+truncate table benf;
+truncate table blockco;
+truncate table distco;
+truncate table employee;
+truncate table projects;
+truncate table stateco

@@ -1,0 +1,1 @@
+UPDATE `benf` SET `nps_id`='KRI-MCPTM-GDVL1' WHERE `nps_id`='KRI-MCPTM-GDV1'

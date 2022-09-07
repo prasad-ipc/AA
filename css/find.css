@@ -1,0 +1,35 @@
+
+form{
+    width: 300px;
+     margin-left:auto;
+     margin-right:auto;
+     color: blue;
+     font-family: arial;
+}
+select {
+color: blue;
+width: 264px;
+font-size: 16px;
+}
+input {
+width: 200px;
+color: blue;
+font-size: 16px;
+}
+
+h2{
+    height: 80px;
+   margin-bottom: 10px;
+   margin-top: -2px;
+}
+table.find td,table.find{
+	 border: 0px solid 334ba0;
+font-size: 15px;
+font-family: arial;
+
+color: #ffffff;
+}
+table p {
+  font-size: 20px;
+  font-family: arial;
+}

@@ -1,0 +1,149 @@
+Full texts 	nps_id 	bc_id 	mandal 	nps_name
+ contact_no 	emp_vill 	emp_po 	emp_block 	emp_dist 	emp_id 	emp_doj
+
+sl St Dist Blk Nm NPSName EmpCode Project Name	NmofBen	F-Name	Dist Mdl Vill PIN BC DC	Remarks
+
+benf_id benf_date project_id nps_id benf_name benf_fath_name benf_contact_no
+benf_vill 	benf_mandal 	benf_dist 	benf_pin
+
+
+
+
+ sl  state district block nps_name emp_id project_title benf_name benf_fath_name benf_vill
+  benf_mandal benf_dist benf_pin bc_name dc_name remarks
+
+
+
+STATE	DISTRICT	DISTRICT CORDINATOR	Emp-ID	DoJ	CONTACT No	Vill	Po	Mandal	District
+BLOCK NAME	 BC NAME	Emp-ID	DoJ	CONTACT 	Vill	Po	Mandal	District
+Sl.No. NPS Name	Name of the Mandal	Emp-ID	DoJ	CONTACT No.	Vill Po	Block	District
+
+  	stateco.state_name	distco.district	distco.dc_name	distco.emp_id	distco.emp_doj
+  	distco.contact_no	distco.emp_vill	distco.emp_po	distco.emp_mandal	distco.emp_dist
+  	blockco.block	blockco.bc_name	blockco.emp_id	blockco.emp_doj	blockco.contact_no	
+  	blockco.emp_vill	blockco.emp_po	blockco. emp_mandal	blockco.emp_dist
+  	areaco.nps 	sl	areaco.nps_name	areaco.mandal	areaco.emp_id	areaco.emp_doj	
+  	areaco.contact_no areaco.emp_vill	areaco.emp_po	areaco. emp_mandal	areaco.emp_dist
+
+
+
+  	CREATE TABLE employee (
+  id VARCHAR(255),
+  employee_s_id VARCHAR(255),
+  employee_designation VARCHAR(255),
+  employee_division VARCHAR(255),
+  employee_name VARCHAR(255),
+  employee_contact_no VARCHAR(255),
+  employee_vill VARCHAR(255),
+  employee_po VARCHAR(255),
+  ememployee_mandal VARCHAR(255),
+  employee_dist VARCHAR(255),
+  employee_state VARCHAR(255),
+  employee_id VARCHAR(255),
+  employee_doj VARCHAR(255)
+);
+INSERT INTO employee 
+  (id,employee_s_id,employee_designation,employee_division,employee_name,employee_contact_no,employee_vill,employee_po,ememployee_mandal,employee_dist,employee_state,employee_id,employee_doj) 
+VALUES 
+  ('GTR','AP','District Coordinator','GUNTUR','B  SASI RATAN','8008663394','ARUNDAL PET','GUNTUR','GUNTUR','GUNTUR','AP','SIHS/00716/2014',''),
+  ('WG','AP','District Coordinator','West Godavari','Ravi Devaki','8688421234','Eluru','Eluru','Eluru','West Godavari','AP','',''),
+  ('PKS','AP','District Coordinator','Prakasam','G Kirankumar','9885497348','Guntur','Guntur','Guntur(U)','Guntur','AP','SIHS/00715/2014',''),
+  ('VSP','AP','District Coordinator','Visakhapatnam','K Sankara Satya Rao','8341441343','Pulagalipalem','Juttdda','Pendurthi','Visakhapatnam','AP','',''),
+  ('EG','AP','District Coordinator','East Godavari','A  P Venkateswara Rao','8121811555','Rajahmundry','Rajahmundry','Rajahmundry','East Godavari','AP','SIHS/00685/2014','20-12-2014'),
+  ('VZM','AP','District Coordinator','Vizianagaram','Shaik  Subhan','8187814375','Sambayyapalem','Kumapalli','L Kota','Vizianagaram','AP','',''),
+  ('KRI','AP','District Coordinator','Krishna','Ravve kancharla','9866783659','Vijayawada','Vijayawada','Vijayawada','Krishna','AP','',''),
+  ('EG-RJY','EG','Block Coordinator','Rajahmundry','A P Venkateswara Rao','8121811555','Rajahmnundry','Rajahmundry','Rajahmundry','East godavari','AP','SIHS/00685/2014','10-12-2014'),
+  ('EG-RCPM','EG','Block Coordinator','Ramachandrapuram','T Rambabu','9908478091','Venkatayapalem','Draksharamam','Ramachandrapruam','East godavari','AP','SIHS/00684/2014','15-12-2014'),
+  ('EG-RPLM','EG','Block Coordinator','Ravulapalem','Ch Chinnary','9848396153','Bobbarlanka','Atreyapuram','Ravulapalem','East godavari','AP','SIHS/00683/2014','15-12-2014'),
+  ('EG-UPGM','EG','Block Coordinator','Uppalaguptam','P Siva Rama Krishna','9704712294','Antavaram','Uppalaguptam','Uppalaguptam','East godavari','AP','SIHS/00687/2014','15-12-2014'),
+  ('EG-AMPM','EG','Block Coordinator','Amalapuram','M Arjuna Rao','9676463715','Potukuru ','Ainavilli','Amalapuram','East godavari','AP','SIHS/00706/2014','15-12-2014'),
+  ('EG-RGPT','EG','Block Coordinator','Rangampeta','S Ramesh','9399923030','Rajahmnundry','Rajahmundry','Rajahmundry','East godavari','AP','SIHS/00686/2014','15-12-2014'),
+  ('EG-TUNI','EG','Block Coordinator','Tuni','Babji','9849958764','Tuni','Tuni','Tuni','East godavari','AP','SIHS/00688/2014','15-12-2014'),
+  ('EG-RMPCVM','EG','Block Coordinator','Ramapchodavaram','A Sivaji','9441849636','Rampachodavaram','Rampachodavaram','Rampachodavaram','East godavari','AP','SIHS/00707/2014','15-12-2014'),
+  ('EG-ADTL','EG','Block Coordinator','Addatigala','DNSV Prasad Kamuju','9493817154','Rampachodavaram','Rampachodavaram','Rampachodavaram','East godavari','AP','SIHS/00682/2014','15-12-2014'),
+  ('EG-KKD','EG','Block Coordinator','Kakinada','KVV Ramana','7893901280','Pitapuram','Pitapuram','Pitapuram','East godavari','AP','SIHS/00789/2014','15-12-2014'),
+  ('KRI-VUYR','KRI','Block Coordinator','Vuyyuru','Areef','9848373999','Vuyyuru','Vuyyuru','','Krishna','AP','','26-11-2014'),
+  ('KRI-MLVM','KRI','Block Coordinator','Mylavaram','Krishnaiah','9912811888','A-Konduru','G-Konduru','','Krishna','AP','','12-03-2014'),
+  ('KRI-GNVM','KRI','Block Coordinator','Gannavaram','Gandivenkatalakshmanarao','9666652829','Gannavaram','Gannavaram','','Krishna','AP','','12-04-2014'),
+  ('KRI-VJWD','KRI','Block Coordinator','Vijayawada','GVenkataRajesh','8885542999','Vijayawada','Vijayawada','','Krishna','AP','','27-11-2014'),
+  ('KRI-GTSL','KRI','Block Coordinator','Ghantasala','Veera Raghavaiah','9014213042','Varregudem','Machilipatnam','Ghantasala','Krishna','AP','','12-05-2014'),
+  ('KRI-MCPTM','KRI','Block Coordinator','Machilipatnam','BRKSarma','8978447744','Machilipatnam','Machilipatnam','Machilipatnam','Krishna','AP','','25-12-2014'),
+  ('KRI-KKLR','KRI','Block Coordinator','Kaikalutu','YRajeshkumat','9032096313','Kaikaluru','Kaikaluru','','Krishna','AP','','12-11-2014'),
+  ('KRI-AVGD','KRI','Block Coordinator','Avanigadda','','NULL','','','','Krishna','AP','',''),
+  ('KRI-NZD','KRI','Block Coordinator','Nuzivedu','','NULL','','','','Krishna','AP','',''),
+  ('KRI-NDGM','KRI','Block Coordinator','Nandigam','','NULL','','','','Krishna','AP','',''),
+  ('VSP-PNDR','VSP','Block Coordinator','Pendurthi','Killi Eswara Rao','9704470228','Pulagalipalem','Juthadda','Pendurthi','Visakhapatnam','AP','',''),
+  ('VSP-KKTPD','VSP','Block Coordinator','K Kotapadu','Golla Radha Krishna','8341543334','Brudhavanam Garden','Pendurthi','Pendurthi','Visakhapatnam','AP','',''),
+  ('VSP-NSPTM','VSP','Block Coordinator','Narsipatnam','Chikkala S V N P Kumar','9848394677','Sarada Nagar','Narsipatnam','Narsipatnam','Visakhapatnam','AP','',''),
+  ('VSP-CHDVM','VSP','Block Coordinator','Chodavaram','Telu Venkata Rao','9966117866','V Juttada','Pendurthi','Pendurthi','Visakhapatnam','AP','',''),
+  ('VSP-ANKP','VSP','Block Coordinator','Anakapalli','S V Appala Raju','9154227833','V Juttada','Pendurthi','Pendurthi','Visakhapatnam','AP','',''),
+  ('VSP-YLMCL','VSP','Block Coordinator','Yelamanchili','R Simhachalam ','9985865156','Naravanipalem','Pendurthi','Pendurthi','Visakhapatnam','AP','',''),
+  ('GTR-1','GTR','Block Coordinator','GUNTUR-1','MASTAN SHARIF','9290004201','AMARAVATHI','AMARAVATHI','AMARAVATHI','GUNTUR','AP','SIHS/00717/2014','12-05-2014'),
+  ('GTR-2','GTR','Block Coordinator','GUNTUR-2','SK BANDAGI SAHEB','7799191300','KVP COLONY','GUNTUR','GUNTUR','GUNTUR','AP','SIHS/00721/2014','12-05-2014'),
+  ('GTR-3','GTR','Block Coordinator','GUNTUR-3','AMARA RAGHAVAIAH','9440681626','PITTU VARI PALEM','KHAJI PLEM','KHAJI PALEM','GUNTUR','AP','SIHS/00718/2014','12-05-2014'),
+  ('GTR-4','GTR','Block Coordinator','GUNTUR-4','SK SALEEM','8125502166','CHUTTUGUNTA','GUNTUR','GUNTUR','GUNTUR','AP','SIHS/00720/2014','12-05-2014'),
+  ('PKS-BLK1','PKS','Block Coordinator','Block-1','Narendranath Namburi','9866424467','Bestapalem','Podili','Podili','Prakasam','AP','',''),
+  ('PKS-BLK2','PKS','Block Coordinator','Block-2','Hariprasad Pidimarry','9848292270','Cumbum','Cumbum','Cumbum','Prakasam','AP','',''),
+  ('PKS-BLK3','PKS','Block Coordinator','Block-3','Jagan Mohan Raju Challa','9666741422','Chimakurthy','Chimakurthy','Chimakurthy','Prakasam','AP','',''),
+  ('PKS-BLK4','PKS','Block Coordinator','Block-4','Srinath Rachagarla','9704663702','Mannetikota','Mannetikota','Ulavapadu','Prakasam','AP','',''),
+  ('PKS-BLK5','PKS','Block Coordinator','Block-5','Venkata rajesh kumar Chappidi','9154561257','Mulaguntapadu','Singarayakonda','Singarayakond','Prakasam','AP','',''),
+  ('PKS-BLK6','PKS','Block Coordinator','Block-6','Anthony Gurijala','8096715473','Regalagadda','Marripudi','Marripudi','Prakasam','AP','',''),
+  ('PKS-BLK7','PKS','Block Coordinator','Block-7','Naga Raja Dasari','9704998143','Singarayakonda','Singarayakonda','Singarayakonda','Prakasam','AP','',''),
+  ('PKS-BLK8','PKS','Block Coordinator','Block-8','Mahendra K','9885240662','Kondamanjuluru','Jpanguluru','Jpanguluru','Prakasam','AP','',''),
+  ('PKS-BLK9','PKS','Block Coordinator','Block-9','Radha Krishna G','9032379780','Ongole','Ongole','Ongole','Prakasam','AP','',''),
+  ('PKS-BLK10','PKS','Block Coordinator','Block-10','Venkateswarlu Nandikanuma','9010202880','Markapuram','Markapur','Markapur','Prakasam','AP','',''),
+  ('VZM-KTVS','VZM','Block Coordinator','Kothavalasa','Pediredla Lova Raju','9494774251','Sundarayyapeta','Kothavalasa','Kothavalasa','Vizianagaram','AP','',''),
+  ('VZM-CHPL','VZM','Block Coordinator','Chipurupalli','Potnuru Gowrunaidu','7893736153','Nagallavalasa','Nagallavalasa','Gurla','Vizianagaram','AP','',''),
+  ('VZM-NLL','VZM','Block Coordinator','Nellimarla','V Chinnam Naidu','8500265524','Yeanaguvalasa','Yeanaguvalasa','Cheepurapalli','Vizianagaram','AP','',''),
+  ('SKL-REGD','SKL','Block Coordinator','Regedi','LAVETICHINNAMNAIDU','9640447600','Purlipeta','Purlipeta','Regediamadalavalasa','Srikakulam','AP','',''),
+  ('SKL-PLKD','SKL','Block Coordinator','Palakonda','LAVETIGANAPATHI RAO','9573578363','Purlipeta','Purlipeta','Regediamadalavalasa','Srikakulam','AP','',''),
+  ('SKL-AMDVS','SKL','Block Coordinator','Amdalavalasa','PAILA  SATHISH ','9848607200','BADDUMASINGI ','','','','AP','',''),
+  ('Palakonda','SRIKAKULAM ','Block Coordinator','Srikakulam','','','','','','','AP','',''),
+  ('EG-RJY-MNDP','EG-RJY','NPS','Mandapeta','P Parvathi Devi','9705264966','Kesavaram','Mandapeta','Rajahmundry','East Godavari','AP','SIHS/00780/2014','15-12-2014'),
+  ('EG-RJY-KRKD','EG-RJY','NPS','Korukonda','M Satya Rani','9949171080','Narasapuram','Korukonda','Rajahmundry','East Godavari','AP','SIHS/00767/2014','15-12-2014'),
+  ('EG-RJY-RJY1','EG-RJY','NPS','Rajahmundry','K Mery Victoria','9347873470','Suvishesapuram','Rajahmundry','Rajahmundry','East Godavari','AP','SIHS/00758/2014','15-12-2014'),
+  ('EG-RJY-RJY2','EG-RJY','NPS','Rajahmundry','M Venkata Lakshmi','9010116635','AC Garden','Rajahmundry','Rajahmundry','East Godavari','AP','SIHS/00786/2014','15-12-2014'),
+  ('EG-RJY-RJY3','EG-RJY','NPS','Rajahmundry','V Rajeswari','8019194459','Nagayanapuram','Rajahmundry','Rajahmundry','East Godavari','AP','SIHS/00759/2014','15-12-2014'),
+  ('EG-RJY-KDYM','EG-RJY','NPS','kadiyam','S Beby','8121374388','Gubbalavari palem','kadiyam','Rajahmundry','East Godavari','AP','SIHS/00761/2014','15-12-2014'),
+  ('EG-RJY-STNGM1','EG-RJY','NPS','Seetanagaram','P Siva Ram','8121237125','Raghudevapuram','Seetanagaram','Rajahmundry','East Godavari','AP','SIHS/00788/2014','15-12-2014'),
+  ('EG-RJY-STNGM2','EG-RJY','NPS','Seetanagaram','GVR Raman','8008026127','Raghudevapuram','Seetanagaram','Rajahmundry','East Godavari','AP','SIHS/00784/2014','15-12-2014'),
+  ('EG-RJY-RNGPT','EG-RJY','NPS','Rangampeta','M Lova Malleswary','9949539057','Vadisileru','Rangampeta','Rajahmundry','East Godavari','AP','SIHS/00760/2014','15-12-2014'),
+  ('EG-RCPM-MNDPT','EG-RCPM','NPS','Mandapeta','G Surya Kiran','8106213404','Arthamuru','Arthamuru','Ramachandapuram','East Godavari','AP','SIHS/00773/2014','15-12-2014'),
+  ('EG-RCPM-RCPM1','EG-RCPM','NPS','Ramacndrapuram','P Bhima Raju','8096396007','Venkatayapale','','','','AP','',''),
+  ('EG-RCPM-RCPM2','EG-RCPM','NPS','Ramacndrapuram','T Chinna Babu','9676340994','Draksharamam','Draksharamam','Ramachandapuram','East Godavari','AP','SIHS/00774/2014','15-12-2014'),
+  ('EG-RCPM-RCPM3','EG-RCPM','NPS','Ramacndrapuram','V Ravi Teja','9154613523','Ramachandrapuram','Ramachandrapuram','Ramachandapuram','East Godavari','AP','SIHS/00777/2014','15-12-2014'),
+  ('EG-RPLM-ATRPM','EG-RPLM','NPS','Atreyapuram','C Kutumba Rao','9912676330','Velicheru','Atreyapuram','Ravulapalem','East Godavari','AP','SIHS/00764/2014','15-12-2014'),
+  ('EG-RPLM-KTPT1','EG-RPLM','NPS','Kottapeta','J Satyanarayana','9347343501','Ganti ','Kottapeta','Ravulapalem','East Godavari','AP','SIHS/00766/2014','15-12-2014'),
+  ('EG-RPLM-KTPT2','EG-RPLM','NPS','Kottapeta','A Sriram Kumar','9440778519','Kottapeta','Kottapeta','Ravulapalem','East Godavari','AP','SIHS/00785/2014','15-12-2014'),
+  ('EG-RPLM-KTPT3','EG-RPLM','NPS','Kottapeta','A Sudhakar','9493955418','Kottapeta','Kottapeta','Ravulapalem','East Godavari','AP','SIHS/00778/2014','15-12-2014'),
+  ('EG-UPGM-UPGM1','EG-UPGM','NPS','Uppalaguptam ','U Rama Lakshmi','NULL','Uppalaguptam ','Uppalaguptam','Uppalaguptam','East Godavari','AP','SIHS/00779/2014','15-12-2014'),
+  ('EG-UPGM-UPGM2','EG-UPGM','NPS','Uppalaguptam ','K  Venkataswarlu','NULL','Challapalli','Uppalaguptam','Uppalaguptam','East Godavari','AP','SIHS/00787/2014','15-12-2014'),
+  ('EG-UPGM-UPGM3','EG-UPGM','NPS','Uppalaguptam ','A Durga Narayana','NULL','S Yanam','Uppalaguptam','Uppalaguptam','East Godavari','AP','SIHS/00783/2014','15-12-2014'),
+  ('EG-UPGM-UPGM4','EG-UPGM','NPS','Allavaram','Y Sudhakar','NULL','Allavaram','Allavaram','Uppalaguptam','East Godavari','AP','SIHS/00781/2014','15-12-2014'),
+  ('EG-AMPM-AMPM1','EG-AMPM','NPS','I Polavaram','K Venkata Lakshmi','9705012841','I Polavaram','I Polavaram','Amalapuram','East Godavari','AP','SIHS/00765/2014','15-12-2014'),
+  ('EG-AMPM-AMPM2','EG-AMPM','NPS','Mummidivaram','J Padmaja','9701482854','Mummidivaram','Mummidivaram','Amalapuram','East Godavari','AP','','15-12-2014'),
+  ('EG-AMPM-AMPM3','EG-AMPM','NPS','Mummidivaram','I Arjun','NULL','Gogulalanka','Mummidivaram','Amalapuram','East Godavari','AP','SIHS/00762/2014','15-12-2014'),
+  ('9177785870','','NPS','Ainavilli','P Janardhan','9177785870','','','','','AP','','15-12-2014'),
+  ('8977365686','','NPS','Ainavilli','P Jagadeesh','8977365686','','','','','AP','','15-12-2014'),
+  ('GNM','','NPS','Katrenikona','G Narasimha Murthy','NULL','','','','','AP','','15-12-2014'),
+  ('MVR','','NPS','Ainavilli','M Venkata Ramana','NULL','','','','','AP','',''),
+  ('EG-RGPT-GNDP','EG-RGPT','NPS','Gandepalli','Boddu Siva','NULL','Gandepalli','Gandepalli','Rangampeta','East Godavari','AP','SIHS/00771/2014','15-12-2014'),
+  ('EG-RGPT-RGPT','EG-RGPT','NPS','Rangampeta','V Srinu','NULL','Marripudi','Rangampeta','Rangampeta','East Godavari','AP','SIHS/00782/2014','15-12-2014'),
+  ('KRI-VUYR-MANDAL1','KRI-VUYR','NPS','','TRGChakradhar','9346231303','Vuyyuru','Vuyyuru','vuyyuru','Krishna','AP','','12-04-2014'),
+  ('KRI-VUYR-MANDAL2','KRI-VUYR','NPS','','MBhavaniSankar reddy','9848107651','pamarru','pamarru','vuyyuru','Krishna','AP','','13-12-2014'),
+  ('KRI-VUYR-MANDAL3','KRI-VUYR','NPS','','chMuraliSudhaker','9848523639','pamarru','pamarru','vuyyuru','Krishna','AP','','13-12-2014'),
+  ('KRI-VUYR-MANDAL4','KRI-VUYR','NPS','','JKrishna','8099494849','vuyyuru','Vuyyuru','vuyyuru','Krishna','AP','','17-12-2014'),
+  ('KRI-MLVM-MANDAL1','KRI-MLVM','NPS','','Suresh','9640099985','pedakomera','ammireddygudem','Mylavaram','Krishna','AP','','12-09-2014'),
+  ('KRI-MLVM-MANDAL2','KRI-MLVM','NPS','','Kumari','8096761037','pedakomera','ammireddygudem','Mylavaram','Krishna','AP','','12-09-2014'),
+  ('KRI-MLVM-MANDAL3','KRI-MLVM','NPS','','Salika Bruhaspathi','9948325442','Mylavaram','mylavaram','Mylavaram','Krishna','AP','','17-12-2014'),
+  ('KRI-GNVM-MANDAL1','KRI-GNVM','NPS','','SSubbarao','8142228850','Surampalli','Ganna varam','Gannavaram','Krishna','AP','','12-08-2014'),
+  ('KRI-GNVM-MANDAL2','KRI-GNVM','NPS','','MJyothikumar','8374169678','bapulapadu','Gannavaram','Gannavaram','Krishna','AP','','15-12-2014'),
+  ('KRI-GNVM-MANDAL3','KRI-GNVM','NPS','','Padmata Naresh','9347928713','Gollanapalli','Gannavaram','Gannavaram','Krishna','AP','','15-12-2014'),
+  ('KRI-GNVM-MANDAL4','KRI-GNVM','NPS','','Govada Lakshmiphani','7036939969','Gannavaram','Gannavaram','Gannavaram','Krishna','AP','','16-12-2014'),
+  ('KRI-GTSL-MANDAL1','KRI-GTSL','NPS','','Dimmeta Ramaraju','NULL','Bapulapadu','Gannavaram','GS','Krishna','AP','','17-12-2014'),
+  ('KRI-GTSL-MANDAL2','KRI-GTSL','NPS','','Udayalakshmi','8465818774','Gantasala','Gantasala','Gantasala','Krishna','AP','','20-12-2014'),
+  ('KRI-GTSL-MANDAL3','KRI-GTSL','NPS','','Chittiah','9490283958','Gantasala','Gantasala','Gantasala','Krishna','AP','','20-12-2014'),
+  ('KRI-MCPTM-MANDAL1','KRI-MCPTM','NPS','','Kondapalli Rajyalaksimi','7396698113','Padana','Machilipatnam','Machilipatnam','Krishna','AP','','23-12-2014'),
+  ('VSP-PNDR-PNDR1','VSP-PNDR','NPS','Pendurthi',' B Ravi','9912863148','Velam Peta','Pendurthi','Pendurthi','Visakhapatnam','AP','',''),
+  ('VSP-PNDR-PNDR2','VSP-PNDR','NPS','Pendurthi',' Trinadha Rao','9000018647','Pendurthi','Pendurthi','Pendurthi','Visakhapatnam','AP','',''),
+  ('GTR-1-AMVT','GTR-1','NPS','AMARAVATHI','K SUMANTH','9000222360','AMARAVATHI','AMARAVATHI','GUNTUR-1','GUNTUR','AP','SIHS/00719/2014','12-05-2014');
